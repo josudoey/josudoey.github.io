@@ -82,7 +82,7 @@ const config: Config = {
         // },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/josudoey/josudoey.github.io',
+          href: 'https://github.com/josudoey/',
           label: 'GitHub',
           position: 'right',
         },
