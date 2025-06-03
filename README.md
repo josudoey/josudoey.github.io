@@ -1,4 +1,4 @@
 # Readme
 
-## Realted Docs
+## Related Docs
 - https://docusaurus.io/
