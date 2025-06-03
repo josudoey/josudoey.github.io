@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Joey\'s Github',
+  title: 'Joey\'s Hub',
   tagline: '',
   // favicon: 'img/favicon.ico',
 
@@ -40,7 +40,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './docs/sidebars.ts',
+          sidebarPath: './docs.sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -72,20 +72,18 @@ const config: Config = {
     // Replace with your project's social card
     // image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Joey\'s Github',
+      title: 'Joey\'s Hub',
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/josudoey/',
-          label: 'GitHub',
-          position: 'right',
-        },
+          href: '#',
+          html: `
+            <a href="https://github.com/josudoey" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center;">
+              <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" style="height: 24px; margin-right: 0.5rem;" />
+            </a>
+          `,
+          position: 'right', 
+        }
       ],
     },
     footer: {

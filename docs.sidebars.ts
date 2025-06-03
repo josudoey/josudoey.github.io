@@ -1,12 +1,13 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
+  hiddenSidebar:[],
   indexSidebar: [
-    // {
-    //     type: 'link',
-    //     label: 'Home',
-    //     href: '/',
-    // },
+    {
+        type: 'link',
+        label: 'About',
+        href: '/about',
+    },
     // {
     //   type: 'category',
     //   label: 'Webtool',

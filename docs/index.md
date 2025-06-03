@@ -2,7 +2,7 @@
 # displayed_sidebar: indexSidebar
 ---
 
-# Personal Project
+# 個人專案
 
 ## Library
 - [js-jieba](https://github.com/josudoey/js-jieba/)

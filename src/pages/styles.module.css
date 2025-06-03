@@ -1,0 +1,57 @@
+.heroBanner {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.heroImage {
+  margin-top: 2rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.themeSection {
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.themeSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.themeSection p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.buttons .button {
+  min-width: 120px;
+}
+
+.skills {
+  margin-top: 2rem;
+}
+
+.skillBadge {
+  display: inline-block;
+  background-color: var(--ifm-color-secondary);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  margin: 0.3rem;
+  font-weight: bold;
+}
