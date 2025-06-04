@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjosudoey_github_io=self.webpackChunkjosudoey_github_io||[]).push([[583],{3254:(e,u,o)=>{o.r(u),o.d(u,{default:()=>c});var s=o(6672),t=o(307),i=o(3420);function c(){return(0,s.useEffect)((()=>{window.location.href="docs"})),(0,i.jsx)(t.A,{})}}}]);
