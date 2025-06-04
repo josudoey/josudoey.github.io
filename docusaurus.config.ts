@@ -72,14 +72,14 @@ const config: Config = {
     // Replace with your project's social card
     // image: 'img/docusaurus-social-card.jpg',
     metadata: [
-      {name:'algolia-site-verification', content:"4ACEAB962D2E30DC"},
+      {name:'algolia-site-verification', content:"F2C9D91D4568864A"},
       {name: 'keywords', content: 'blog'},
     ],
-    algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
-      apiKey: '33070d2f9549993f189c24c26fcceeda',
-      appId: 'X16QIT427N',
-      indexName: "crawler_Joey's Hub"
-    },
+    // algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
+    //   apiKey: 'TWLN3JK2FK',
+    //   appId: 'TWLN3JK2FK',
+    //   indexName: "crawler_Joey's Hub"
+    // },
     navbar: {
       title: 'Joey\'s Hub',
       items: [
