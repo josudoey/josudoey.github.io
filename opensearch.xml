@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Joey&#39;s Hub</ShortName>
-  <Description>Search Joey&#39;s Hub</Description>
+  <ShortName>Joey&#39;s NetHub</ShortName>
+  <Description>Search Joey&#39;s NetHub</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Url type="text/html" method="get" template="https://josudoey.github.io/search?q={searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" template="https://josudoey.github.io/opensearch.xml" />
