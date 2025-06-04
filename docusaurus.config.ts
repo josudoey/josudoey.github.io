@@ -75,11 +75,11 @@ const config: Config = {
       {name:'algolia-site-verification', content:"F2C9D91D4568864A"},
       {name: 'keywords', content: 'blog'},
     ],
-    // algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
-    //   apiKey: 'TWLN3JK2FK',
-    //   appId: 'TWLN3JK2FK',
-    //   indexName: "crawler_Joey's Hub"
-    // },
+    algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
+      apiKey: '565eebd3a7eb040be19b1ead63f74dc4',
+      appId: 'TWLN3JK2FK',
+      indexName: "josudoey_github_io_twln3jk2fk_pages"
+    },
     navbar: {
       title: 'Joey\'s Hub',
       items: [
