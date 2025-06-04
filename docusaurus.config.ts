@@ -72,6 +72,7 @@ const config: Config = {
     // Replace with your project's social card
     // image: 'img/docusaurus-social-card.jpg',
     metadata: [
+      {name:'algolia-site-verification', content:"4ACEAB962D2E30DC"},
       {name: 'keywords', content: 'blog'},
     ],
     algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
