@@ -73,6 +73,7 @@ const config: Config = {
     // image: 'img/docusaurus-social-card.jpg',
     metadata: [
       {name:'algolia-site-verification', content:"F2C9D91D4568864A"},
+      {name:"google-site-verification", content:"SR8PdSgjtRYWo8gTxn1Lc0eFsSVqZigByOx_-HDWWI0"},
       {name: 'keywords', content: 'blog'},
     ],
     algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
