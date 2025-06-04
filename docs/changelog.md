@@ -7,3 +7,4 @@ slug: /
 
 ## 2025-06-04
 - 新增 Changelog 頁面
+- 新增 SearchBar
