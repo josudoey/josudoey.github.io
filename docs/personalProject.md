@@ -1,7 +1,3 @@
----
-# displayed_sidebar: indexSidebar
----
-
 # 個人專案
 
 ## Library

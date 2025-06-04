@@ -74,7 +74,7 @@ const config: Config = {
     navbar: {
       title: 'Joey\'s Hub',
       items: [
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/aboutMe', label: 'About Me', position: 'right'},
         {
           href: '#',
           html: `

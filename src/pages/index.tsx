@@ -5,7 +5,7 @@ import Layout from '@theme/Layout';
 
 export default function Home(): ReactNode {
   useEffect(()=>{
-    window.location.href="about"
+    window.location.href="docs"
   })
   return (
     <Layout></Layout>
