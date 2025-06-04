@@ -80,7 +80,7 @@ const config: Config = {
       {name: 'keywords', content: 'blog'},
     ],
     algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
-      apiKey: '565eebd3a7eb040be19b1ead63f74dc4',
+      apiKey: '7429d7a3ad58bb37bd31312283d42d6c',
       appId: 'TWLN3JK2FK',
       indexName: "josudoey_github_io_twln3jk2fk_pages"
     },
