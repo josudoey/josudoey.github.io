@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Joey\'s Hub',
+  title: 'Joey\'s NetHub',
   tagline: '',
   // favicon: 'img/favicon.ico',
 
@@ -85,7 +85,7 @@ const config: Config = {
       indexName: "josudoey_github_io_twln3jk2fk_pages"
     },
     navbar: {
-      title: 'Joey\'s Hub',
+      title: 'Joey\'s NetHub',
       items: [
         { // ref https://docusaurus.io/docs/api/themes/configuration#navbar-search
           type: 'search',
