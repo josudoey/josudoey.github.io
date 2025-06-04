@@ -71,9 +71,21 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     // image: 'img/docusaurus-social-card.jpg',
+    metadata: [
+      {name: 'keywords', content: 'blog'},
+    ],
+    algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
+      apiKey: '468ae5183898ece66edced6542bc0c00',
+      appId: 'X16QIT427N',
+      indexName: 'josudoey.github.io'
+    },
     navbar: {
       title: 'Joey\'s Hub',
       items: [
+        { // ref https://docusaurus.io/docs/api/themes/configuration#navbar-search
+          type: 'search',
+          position: 'right',
+        },
         {to: '/aboutMe', label: 'About Me', position: 'right'},
         {
           href: '#',
