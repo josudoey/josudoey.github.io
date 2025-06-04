@@ -76,7 +76,7 @@ const config: Config = {
       {name: 'keywords', content: 'blog'},
     ],
     algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
-      apiKey: '468ae5183898ece66edced6542bc0c00',
+      apiKey: '33070d2f9549993f189c24c26fcceeda',
       appId: 'X16QIT427N',
       indexName: "crawler_Joey's Hub"
     },
