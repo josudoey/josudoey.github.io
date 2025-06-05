@@ -24,8 +24,6 @@ export default function GiscusComment() :ReactNode{
       theme={colorMode}
       lang="zh-TW"
       loading="lazy"
-      crossorigin="anonymous"
-      async
     />
   );
 }
