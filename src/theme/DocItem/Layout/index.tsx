@@ -1,14 +1,14 @@
 import React, { type ReactNode } from 'react'
-import Footer from '@theme-original/DocItem/Footer'
-import type FooterType from '@theme/DocItem/Footer'
+import Layout from '@theme-original/DocItem/Layout'
+import type LayoutType from '@theme/DocItem/Layout'
 import type { WrapperProps } from '@docusaurus/types'
 import { useDoc } from '@docusaurus/plugin-content-docs/client'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import GiscusComment from '@site/src/components/GiscusComment'
 
-type Props = WrapperProps<typeof FooterType>;
+type Props = WrapperProps<typeof LayoutType>;
 
-export default function FooterWrapper (props: Props): ReactNode {
+export default function LayoutWrapper (props: Props): ReactNode {
   const ctx = useDocusaurusContext()
   const { defaultEnabledComment } = ctx.siteConfig.customFields
 
@@ -20,10 +20,14 @@ export default function FooterWrapper (props: Props): ReactNode {
 
   return (
     <>
+      <Layout {...props} />
       {(enabledComment) && (
-        <GiscusComment />
+        <>
+          <div className='giscus-comment-wrapper'>
+            <GiscusComment />
+          </div>
+        </>
       )}
-      <Footer {...props} />
     </>
   )
 }
