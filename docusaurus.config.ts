@@ -80,9 +80,9 @@ const config: Config = {
       { name: 'keywords', content: 'blog' }
     ],
     algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
-      apiKey: '7429d7a3ad58bb37bd31312283d42d6c',
-      appId: 'TWLN3JK2FK',
-      indexName: 'josudoey_github_io_twln3jk2fk_pages'
+      apiKey: '5fac56a2cf4660e6fa6ed09eda736810',
+      appId: 'W9K4QVQVO6',
+      indexName: 'josudoeyio'
     },
     navbar: {
       title: 'Joey\'s NetHub',
