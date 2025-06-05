@@ -12,15 +12,15 @@ export default function GiscusComment() :ReactNode{
   return (
     <Giscus
       repo="josudoey/josudoey.github.io"
-      repo-id="MDEwOlJlcG9zaXRvcnk0MDEwNzg0ODE="
+      repoId="MDEwOlJlcG9zaXRvcnk0MDEwNzg0ODE="
       category="General"
-      category-id="DIC_kwDOF-f40c4CrDS4"
-      mapping="url"
+      categoryId="DIC_kwDOF-f40c4CrDS4"
+      mapping="pathname"
       term="[NetHub]"
       strict="0"
-      reactions-enabled="1"
-      emit-metadata="1"
-      input-position="top"
+      reactionsEnabled="1"
+      emitMetadata="1"
+      inputPosition="top"
       theme={colorMode}
       lang="zh-TW"
       loading="lazy"
