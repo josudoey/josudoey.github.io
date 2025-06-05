@@ -4,6 +4,8 @@ slug: /
 ---
 
 # Changelog
+## 2025-06-05
+- 新增 Misc 頁面
 
 ## 2025-06-04
 - 新增 Changelog 頁面
