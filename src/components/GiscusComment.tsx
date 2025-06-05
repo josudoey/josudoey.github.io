@@ -1,12 +1,12 @@
-import React, {type ReactNode} from 'react';
-import Giscus from "@giscus/react";
-import { useColorMode } from '@docusaurus/theme-common';
+import React, { type ReactNode } from 'react'
+import Giscus from '@giscus/react'
+import { useColorMode } from '@docusaurus/theme-common'
 
 // ref https://dev.to/m19v/how-to-add-giscus-comments-to-docusaurus-439h
 // ref https://ouch1978.github.io/docs/docusaurus/customization/add-giscus-to-docusaurus
 
-export default function GiscusComment() :ReactNode{
-  const { colorMode } = useColorMode();
+export default function GiscusComment () :ReactNode {
+  const { colorMode } = useColorMode()
 
   // ref https://giscus.app/zh-TW
   return (
@@ -25,5 +25,5 @@ export default function GiscusComment() :ReactNode{
       lang="zh-TW"
       loading="lazy"
     />
-  );
+  )
 }

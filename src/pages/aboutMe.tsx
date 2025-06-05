@@ -1,11 +1,9 @@
-import type {ReactNode} from 'react';
-import  {useEffect} from 'react';
-import Layout from '@theme/Layout';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import type { ReactNode } from 'react'
+import Layout from '@theme/Layout'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+import styles from './styles.module.css'
 
-function AboutHeader() :ReactNode{
+function AboutHeader () :ReactNode {
   return (
     <header className={styles.heroBanner}>
       <div className="container">
@@ -29,10 +27,7 @@ function AboutHeader() :ReactNode{
   )
 }
 
-export default function About(): ReactNode {
-  // useEffect(()=>{
-  //   window.location.href="docs/"
-  // })
+export default function About (): ReactNode {
   return (
   <Layout>
       <AboutHeader />
@@ -53,5 +48,5 @@ export default function About(): ReactNode {
         </section>
       </main>
     </Layout>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import type { Config } from '@docusaurus/types'
+import type * as Preset from '@docusaurus/preset-classic'
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -10,7 +10,7 @@ const config: Config = {
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true // Improve compatibility with the upcoming Docusaurus v4
   },
 
   // Set the production url of your site here
@@ -32,7 +32,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en']
   },
 
   presets: [
@@ -40,62 +40,62 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './docs.sidebars.ts',
+          sidebarPath: './docs.sidebars.ts'
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
-            // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
-            xslt: true,
+            xslt: true
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
-            // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onUntruncatedBlogPosts: 'warn'
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: './src/css/custom.css'
         },
         gtag: {
-          trackingID: 'GTM-MBGWG2SH',
-        },
-      } satisfies Preset.Options,
-    ],
+          trackingID: 'GTM-MBGWG2SH'
+        }
+      } satisfies Preset.Options
+    ]
   ],
 
   themeConfig: {
     // Replace with your project's social card
     // image: 'img/docusaurus-social-card.jpg',
     metadata: [
-      {name:'algolia-site-verification', content:"F2C9D91D4568864A"},
-      {name:"google-site-verification", content:"SR8PdSgjtRYWo8gTxn1Lc0eFsSVqZigByOx_-HDWWI0"},
-      {name: 'keywords', content: 'blog'},
+      { name: 'algolia-site-verification', content: 'F2C9D91D4568864A' },
+      { name: 'google-site-verification', content: 'SR8PdSgjtRYWo8gTxn1Lc0eFsSVqZigByOx_-HDWWI0' },
+      { name: 'keywords', content: 'blog' }
     ],
     algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
       apiKey: '7429d7a3ad58bb37bd31312283d42d6c',
       appId: 'TWLN3JK2FK',
-      indexName: "josudoey_github_io_twln3jk2fk_pages"
+      indexName: 'josudoey_github_io_twln3jk2fk_pages'
     },
     navbar: {
       title: 'Joey\'s NetHub',
       logo: {
-        alt: "Site Logo",
-        src: "img/logo.png",
+        alt: 'Site Logo',
+        src: 'img/logo.png'
       },
       items: [
         { // ref https://docusaurus.io/docs/api/themes/configuration#navbar-search
           type: 'search',
-          position: 'right',
+          position: 'right'
         },
-        {to: '/aboutMe', label: 'About Me', position: 'right'},
+        { to: '/aboutMe', label: 'About Me', position: 'right' },
         {
           href: '#',
           html: `
@@ -103,9 +103,9 @@ const config: Config = {
               <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" style="height: 24px; margin-right: 0.5rem;" />
             </a>
           `,
-          position: 'right', 
+          position: 'right'
         }
-      ],
+      ]
     },
     footer: {
       style: 'dark',
@@ -129,12 +129,12 @@ const config: Config = {
       //     ],
       //   },
       // ],
-      copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`,
-    },
+      copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`
+    }
   } satisfies Preset.ThemeConfig,
-  customFields:{
+  customFields: {
     defaultEnabledComment: true
   }
-};
+}
 
-export default config;
+export default config
