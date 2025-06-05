@@ -2,9 +2,11 @@
 
 ## NPM
 - [js-jieba](https://www.npmjs.com/package/js-jieba)
-- [js-zbar-qr](https://github.com/josudoey/js-zbar-qr)
+- [zbar-qr](https://www.npmjs.com/package/zbar-qr)
 - [promise-singleflight](https://www.npmjs.com/package/promise-singleflight)
 - [promise-solo](https://www.npmjs.com/package/promise-solo)
+- [composable-hooks](https://www.npmjs.com/package/composable-hooks)
+
 
 ## Example
 - [cropper](https://github.com/josudoey/webtool-cropper/)
