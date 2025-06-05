@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Joey\'s NetHub',
   tagline: '',
-  // favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -86,6 +86,10 @@ const config: Config = {
     },
     navbar: {
       title: 'Joey\'s NetHub',
+      logo: {
+        alt: "Site Logo",
+        src: "img/logo.png",
+      },
       items: [
         { // ref https://docusaurus.io/docs/api/themes/configuration#navbar-search
           type: 'search',
