@@ -1,1 +1,4 @@
-# Algolia-Crawler-Verif: F2C9D91D4568864A
+User-agent: *
+Disallow:
+
+Sitemap: https://josudoey.github.io/sitemap.xml
