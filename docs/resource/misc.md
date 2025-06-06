@@ -1,7 +1,5 @@
 # Misc
 
-各種有用的資源
-
 ## animation
 - [gsap](https://greensock.com/gsap/): 強大的 JavaScript 動畫庫，提供豐富的動畫效果與時間軸控制
 
@@ -14,7 +12,7 @@
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): 原子化 CSS 框架，提供實用的CSS類別
 
 # benchmark
-- [Custom Elements Everywhere](https://custom-elements-everywhere.com/): 評估不同前端框架對 Web 原生 Custom Elements (自定義元素) 支援程度的網站
+- [Custom Elements Everywhere](https://custom-elements-everywhere.com/): 測試前端框架對 Web 原生 Custom Elements (自定義元素) 支援程度的網站
 
 # placeholder image
 - [fakeimg](https://fakeimg.pl/): 用於產生指定尺寸、顏色和文字的圖片服務
