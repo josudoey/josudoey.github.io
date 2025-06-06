@@ -6,7 +6,6 @@ sidebar_position: 2
 
 ## Image
 - [sharp](https://www.npmjs.com/package/sharp): 高效能的影像處理工具，基於 libvips 實作，支援圖片壓縮、裁切、轉換格式、加水印等功能，適合用於伺服器端的圖片處理與縮圖產生
-
 - [tesseract.js](https://www.npmjs.com/package/tesseract.js): 基於 Tesseract OCR 引擎的 JavaScript 實作，可在瀏覽器與 Node.js 進行圖像文字辨識（OCR），支援多語言辨識與 Worker 並行處理，適合前後端圖像文字擷取應用
 
 ## CSS
