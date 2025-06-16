@@ -4,6 +4,9 @@ slug: /
 ---
 
 # Changelog
+## 2025-06-17
+- 新增 Software Design Overview 頁面
+
 ## 2025-06-06
 - 新增 Tools 頁面
 - 新增 Resource/NPM package頁面
