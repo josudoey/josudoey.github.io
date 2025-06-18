@@ -4,6 +4,9 @@ slug: /
 ---
 
 # Changelog
+## 2025-06-18
+- 新增 Jieba 頁面
+
 ## 2025-06-17
 - 新增 Software Design Overview 頁面
 
