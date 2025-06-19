@@ -9,10 +9,11 @@
 # benchmark
 - [Custom Elements Everywhere](https://custom-elements-everywhere.com/): 測試前端框架對 Web 原生 Custom Elements (自定義元素) 支援程度的網站
 
-# placeholder image
+# placeholder
+- [jsonplaceholder](https://jsonplaceholder.typicode.com/): 用於產生測試或填充使用的json服務
 - [fakeimg](https://fakeimg.pl/): 用於產生指定尺寸、顏色和文字的圖片服務
 - [lorem](https://lorem.space/): 用於產生隨機圖片的服務
-- [picsum](https://picsum.photos/): 提供隨機圖片或指定圖片作為佔位符的服務
+- [picsum](https://picsum.photos/): 提供隨機圖片或指定圖片作為畫面填充務的服務
 
 # cheat sheet
 - [OverAPI](https://overapi.com/): 提供各種程式語言和技術速查表的網站
