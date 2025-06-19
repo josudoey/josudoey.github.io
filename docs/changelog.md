@@ -4,6 +4,9 @@ slug: /
 ---
 
 # Changelog
+## 2025-06-19
+- 新增 Request Deduplication 頁面
+
 ## 2025-06-18
 - 新增 Jieba 頁面
 

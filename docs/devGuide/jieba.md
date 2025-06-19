@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # About Jieba
 
 Jieba (結巴) 是一個中文斷詞工具
