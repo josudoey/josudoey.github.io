@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Request Deduplication
 
 Request Deduplication 是在系統中使用的一種設計，旨在防止相同的請求被多次處理。又可稱作為 Idempotency Handling.

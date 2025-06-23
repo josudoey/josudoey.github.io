@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Software Design Overview
 
 ## 需求分析 requirement analysis
