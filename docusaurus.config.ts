@@ -95,7 +95,7 @@ const config: Config = {
           type: 'search',
           position: 'right'
         },
-        { to: '/aboutMe', label: 'About Me', position: 'right' },
+        { to: '/about', label: 'About', position: 'right' },
         {
           href: '#',
           html: `

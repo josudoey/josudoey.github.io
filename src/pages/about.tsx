@@ -36,7 +36,7 @@ export default function About (): ReactNode {
           <div className="container">
             <h2>關於我</h2>
             <p>
-              我是<strong>Better Engineer</strong>, 期許自己每天都能多進步一點點, 讓世界可以變得更<strong>美好</strong>
+              我是一位<strong>Better Engineer</strong>, 期許自己每天都能多進步一點點, 讓世界可以變得更<strong>美好</strong>
             </p>
             <p>
               我喜歡探索各樣新事物, 認識各樣的知識, 體驗日常的精彩時刻
