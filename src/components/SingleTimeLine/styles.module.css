@@ -1,0 +1,479 @@
+
+.singletimeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.singletimeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(0, 0, 0);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+}
+
+/* item around content */
+.singletimeline__item {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the singletimeline */
+.singletimeline__item::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -13px;
+  background-color: rgb(46, 46, 46);
+  border: 4px solid #000000;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the item to the left */
+.singletimeline__item--left {
+  left: 0;
+}
+
+/* Place the item to the right */
+.singletimeline__item--right {
+  left: 50%;
+}
+
+/* Add arrows to the left item (pointing right) */
+.singletimeline__item--left::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(54, 54, 54);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(54, 54, 54);
+}
+
+/* Add arrows to the right item (pointing left) */
+.singletimeline__item--right::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgb(78, 78, 78);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(54, 54, 54) transparent transparent;
+}
+
+/* Fix the circle for items on the right side */
+.singletimeline__item--right::after {
+  left: -13px;
+}
+
+/* The actual content */
+.singletimeline__content {
+  padding: 20px 30px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 6px;
+}
+
+
+/* Media queries - Responsive singletimeline on screens less than 600px wide */
+@media screen {
+  .singletimeline::after {
+    left: 31px;
+  }
+  
+  .singletimeline__item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .singletimeline__item::before {
+    left: 60px;
+    border: medium solid rgb(68, 68, 68);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(0, 0, 0);
+  }
+
+  .singletimeline__item--left::after, .singletimeline__item--right::after {
+    left: 15px;
+  }
+  
+  .singletimeline__item--right {
+    left: 0%;
+  }
+}
+
+/*basics colors for background color items*/
+
+.singletimeline__content--black {
+  background-color: #000000;
+}
+.singletimeline__content--white {
+  background-color: #ffffff;
+}
+
+/* ********************* infima integration for background color items ************************/
+/* Primary */
+.singletimeline__content--primary {
+  background-color: var(--ifm-color-primary);
+}
+
+/* Primary Dark */
+.singletimeline__content--primary-dark {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+/* Primary Darker */
+.singletimeline__content--primary-darker {
+  background-color: var(--ifm-color-primary-darker);
+}
+
+/* Primary Darkest */
+.singletimeline__content--primary-darkest {
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+/* Primary Light */
+.singletimeline__content--primary-light {
+  background-color: var(--ifm-color-primary-light);
+}
+
+/* Primary Lighter */
+.singletimeline__content--primary-lighter {
+  background-color: var(--ifm-color-primary-lighter);
+}
+
+/* Primary Lightest */
+.singletimeline__content--primary-lightest {
+  background-color: var(--ifm-color-primary-lightest);
+}
+/* Success */
+.singletimeline__content--success {
+  background-color: var(--ifm-color-success);
+}
+
+/* Success Dark */
+.singletimeline__content--success-dark {
+  background-color: var(--ifm-color-success-dark);
+}
+
+/* Success Darker */
+.singletimeline__content--success-darker {
+  background-color: var(--ifm-color-success-darker);
+}
+
+/* Success Darkest */
+.singletimeline__content--success-darkest {
+  background-color: var(--ifm-color-success-darkest);
+}
+
+/* Success Light */
+.singletimeline__content--success-light {
+  background-color: var(--ifm-color-success-light);
+}
+
+/* Success Lighter */
+.singletimeline__content--success-lighter {
+  background-color: var(--ifm-color-success-lighter);
+}
+
+/* Success Lightest */
+.singletimeline__content--success-lightest {
+  background-color: var(--ifm-color-success-lightest);
+}
+
+/* Warning */
+.singletimeline__content--warning {
+  background-color: var(--ifm-color-warning);
+}
+
+/* Warning Dark */
+.singletimeline__content--warning-dark {
+  background-color: var(--ifm-color-warning-dark);
+}
+
+/* Warning Darker */
+.singletimeline__content--warning-darker {
+  background-color: var(--ifm-color-warning-darker);
+}
+
+/* Warning Darkest */
+.singletimeline__content--warning-darkest {
+  background-color: var(--ifm-color-warning-darkest);
+}
+
+/* Warning Light */
+.singletimeline__content--warning-light {
+  background-color: var(--ifm-color-warning-light);
+}
+
+/* Warning Lighter */
+.singletimeline__content--warning-lighter {
+  background-color: var(--ifm-color-warning-lighter);
+}
+
+/* Warning Lightest */
+.singletimeline__content--warning-lightest {
+  background-color: var(--ifm-color-warning-lightest);
+}
+
+/* danger */
+.singletimeline__content--danger {
+  background-color: var(--ifm-color-danger);
+}
+
+/* danger Dark */
+.singletimeline__content--danger-dark {
+  background-color: var(--ifm-color-danger-dark);
+}
+
+/* danger Darker */
+.singletimeline__content--danger-darker {
+  background-color: var(--ifm-color-danger-darker);
+}
+
+/* danger Darkest */
+.singletimeline__content--danger-darkest {
+  background-color: var(--ifm-color-danger-darkest);
+}
+
+/* danger Light */
+.singletimeline__content--danger-light {
+  background-color: var(--ifm-color-danger-light);
+}
+
+/* danger Lighter */
+.singletimeline__content--danger-lighter {
+  background-color: var(--ifm-color-danger-lighter);
+}
+
+/* danger Lightest */
+.singletimeline__content--danger-lightest {
+  background-color: var(--ifm-color-danger-lightest);
+}
+
+/* Info */
+.singletimeline__content--info {
+  background-color: var(--ifm-color-info);
+}
+
+/* Info Dark */
+.singletimeline__content--info-dark {
+  background-color: var(--ifm-color-info-dark);
+}
+
+/* Info Darker */
+.singletimeline__content--info-darker {
+  background-color: var(--ifm-color-info-darker);
+}
+
+/* Info Darkest */
+.singletimeline__content--info-darkest {
+  background-color: var(--ifm-color-info-darkest);
+}
+
+/* Info Light */
+.singletimeline__content--info-light {
+  background-color: var(--ifm-color-info-light);
+}
+
+/* Info Lighter */
+.singletimeline__content--info-lighter {
+  background-color: var(--ifm-color-info-lighter);
+}
+
+/* Info Lightest */
+.singletimeline__content--info-lightest {
+  background-color: var(--ifm-color-info-lightest);
+}
+
+/*  background color for line of time line*/
+/* Primary */
+.singletimeline--primary::after {
+  background-color: var(--ifm-color-primary);
+}
+
+/* Primary Dark */
+.singletimeline--primary-dark::after {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+/* Primary Darker */
+.singletimeline--primary-darker::after {
+  background-color: var(--ifm-color-primary-darker);
+}
+
+/* Primary Darkest */
+.singletimeline--primary-darkest::after {
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+/* Primary Light */
+.singletimeline--primary-light::after {
+  background-color: var(--ifm-color-primary-light);
+}
+
+/* Primary Lighter */
+.singletimeline--primary-lighter::after {
+  background-color: var(--ifm-color-primary-lighter);
+}
+
+/* Primary Lightest */
+.singletimeline--primary-lightest::after {
+  background-color: var(--ifm-color-primary-lightest);
+}
+
+/* Success */
+.singletimeline--success::after {
+  background-color: var(--ifm-color-success);
+}
+
+/* Success Dark */
+.singletimeline--success-dark::after {
+  background-color: var(--ifm-color-success-dark);
+}
+
+/* Success Darker */
+.singletimeline--success-darker::after {
+  background-color: var(--ifm-color-success-darker);
+}
+
+/* Success Darkest */
+.singletimeline--success-darkest::after {
+  background-color: var(--ifm-color-success-darkest);
+}
+
+/* Success Light */
+.singletimeline--success-light::after {
+  background-color: var(--ifm-color-success-light);
+}
+
+/* Success Lighter */
+.singletimeline--success-lighter::after {
+  background-color: var(--ifm-color-success-lighter);
+}
+
+/* Success Lightest */
+.singletimeline--success-lightest::after {
+  background-color: var(--ifm-color-success-lightest);
+}
+
+/* Warning */
+.singletimeline--warning::after {
+  background-color: var(--ifm-color-warning);
+}
+
+/* Warning Dark */
+.singletimeline--warning-dark::after {
+  background-color: var(--ifm-color-warning-dark);
+}
+
+/* Warning Darker */
+.singletimeline--warning-darker::after {
+  background-color: var(--ifm-color-warning-darker);
+}
+
+/* Warning Darkest */
+.singletimeline--warning-darkest::after {
+  background-color: var(--ifm-color-warning-darkest);
+}
+
+/* Warning Light */
+.singletimeline--warning-light::after {
+  background-color: var(--ifm-color-warning-light);
+}
+
+/* Warning Lighter */
+.singletimeline--warning-lighter::after {
+  background-color: var(--ifm-color-warning-lighter);
+}
+
+/* Warning Lightest */
+.singletimeline--warning-lightest::after {
+  background-color: var(--ifm-color-warning-lightest);
+}
+
+/* danger */
+.singletimeline--danger::after {
+  background-color: var(--ifm-color-danger);
+}
+
+/* danger Dark */
+.singletimeline--danger-dark::after {
+  background-color: var(--ifm-color-danger-dark);
+}
+
+/* danger Darker */
+.singletimeline--danger-darker::after {
+  background-color: var(--ifm-color-danger-darker);
+}
+
+/* danger Darkest */
+.singletimeline--danger-darkest::after {
+  background-color: var(--ifm-color-danger-darkest);
+}
+
+/* danger Light */
+.singletimeline--danger-light::after {
+  background-color: var(--ifm-color-danger-light);
+}
+
+/* danger Lighter */
+.singletimeline--danger-lighter::after {
+  background-color: var(--ifm-color-danger-lighter);
+}
+
+/* danger Lightest */
+.singletimeline--danger-lightest::after {
+  background-color: var(--ifm-color-danger-lightest);
+}
+
+/* Info */
+.singletimeline--info::after {
+  background-color: var(--ifm-color-info);
+}
+
+/* Info Dark */
+.singletimeline--info-dark::after {
+  background-color: var(--ifm-color-info-dark);
+}
+
+/* Info Darker */
+.singletimeline--info-darker::after {
+  background-color: var(--ifm-color-info-darker);
+}
+
+/* Info Darkest */
+.singletimeline--info-darkest::after {
+  background-color: var(--ifm-color-info-darkest);
+}
+
+/* Info Light */
+.singletimeline--info-light::after {
+  background-color: var(--ifm-color-info-light);
+}
+
+/* Info Lighter */
+.singletimeline--info-lighter::after {
+  background-color: var(--ifm-color-info-lighter);
+}
+
+/* Info Lightest */
+.singletimeline--info-lightest::after {
+  background-color: var(--ifm-color-info-lightest);
+}
