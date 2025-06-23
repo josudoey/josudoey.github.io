@@ -4,6 +4,9 @@ slug: /
 ---
 
 # Changelog
+## 2025-06-23
+- 新增 Authorization Model 頁面
+
 ## 2025-06-19
 - 新增 Request Deduplication 頁面
 
