@@ -1,3 +1,41 @@
 .giscus-comment-wrapper {
-    padding-top: 100px;
+  padding-top: 100px;
+}
+
+:root {
+  --custom-blue: #007bff;
+  --custom-green: #28a745;
+  --custom-grey: #ced4da;
+  --custom-orange: #fd7e14;
+  --custom-purple: #6f42c1;
+}
+
+.custom-blue {
+  color: var(--custom-blue);
+  border-color: var(--custom-blue);
+}
+
+.custom-green {
+  color: var(--custom-green);
+  border-color: var(--custom-green);
+}
+
+.custom-grey {
+  color: var(--custom-grey);
+  border-color: var(--custom-grey);
+}
+
+.custom-orange {
+  color: var(--custom-orange);
+  border-color: var(--custom-orange);
+}
+
+.custom-purple {
+  color: var(--custom-purple);
+  border-color: var(--custom-purple);
+}
+
+.custom-solid-radius-block {
+  border: 5px solid;
+  border-radius: 20px;
 }
