@@ -5,6 +5,10 @@ slug: /
 
 # Changelog
 
+## 2025-06-24
+
+- 更新 About Me 頁面
+
 ## 2025-06-23
 
 - 新增 Authorization Model 頁面
