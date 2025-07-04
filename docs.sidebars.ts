@@ -2,7 +2,6 @@ import type { SidebarsConfig } from '@docusaurus/plugin-content-docs'
 
 const sidebars: SidebarsConfig = {
   indexSidebar: [
-    'changelog',
     'aboutMe',
     {
       // ref https://docusaurus.io/docs/sidebar/items#sidebar-item-category
