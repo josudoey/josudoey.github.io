@@ -1,0 +1,51 @@
+import { ProsConsTable } from './002_ioModel'
+
+# I/O Model
+
+## 阻塞 I/O (Blocking I/O)
+
+應用程式發出 I/O 請求後，會等待核心完成操作並返回結果，期間無法執行其他任務。
+
+**實例**
+
+- C: read() 函式讀取檔案或網路資料。
+- Java: 使用 InputStream.read() 或 Socket.accept() 就是阻塞的。
+
+## 非阻塞 I/O (Non-blocking I/O)
+
+應用程式發出 I/O 請求後立即返回，若數據未就緒則返回錯誤。應用程式需反覆輪詢，直到數據準備好再讀取。
+
+**實例**
+
+- C: 將 Socket 設定為 O_NONBLOCK 後，呼叫 read() 函式。若無數據可讀，會立即返回 EWOULDBLOCK 或 EAGAIN 錯誤。
+- Java NIO: SocketChannel.configureBlocking(false) 讓通道進入非阻塞模式。
+
+## I/O 多工 (I/O Multiplexing)
+
+單一執行緒可同時監聽多個文件描述符的 I/O 就緒事件。它會阻塞直到有 FD(File descriptor) 就緒，然後再對就緒的 FD 執行非阻塞 I/O。
+
+**實例**
+
+- C (Linux): 高併發 Web 伺服器使用 epoll 監聽數千個客戶端連接，當某個連接有數據可讀時才去處理它。
+- Java NIO: Selector 用於同時監聽多個 Channel 的事件（如新的連接、可讀數據），然後處理就緒的通道。
+
+## 訊號驅動 I/O (Signal-driven I/O)
+
+當 I/O 數據準備好時，核心會發送一個 SIGIO 訊號給應用程式，應用程式在訊號處理器中執行讀取操作。
+
+**實例**
+
+- C: 較少用於高併發，主要用於特定場景，例如監控終端設備。透過 fcntl() 設定 O_ASYNC 標誌。
+
+## 非同步 I/O (Asynchronous I/O, AIO)
+
+應用程式發出 I/O 請求後立即返回，不阻塞。核心在整個 I/O 操作完成後（包含數據複製）才通知應用程式。
+
+**實例**
+
+- C(Linux): 使用 io_uring 執行檔案讀寫。程式提交讀取請求後立即返回，當數據讀取並寫入應用程式指定緩衝區後，核心才發送完成事件。
+- Java: java.nio.channels.AsynchronousFileChannel 和 AsynchronousSocketChannel 提供了此功能，底層依賴於作業系統的 AIO 實現。
+
+## 優缺比較
+
+<ProsConsTable></ProsConsTable>
