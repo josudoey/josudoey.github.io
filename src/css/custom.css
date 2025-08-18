@@ -39,3 +39,8 @@
   border: 5px solid;
   border-radius: 20px;
 }
+
+.avatar-img {
+  border-radius: 50%;
+  object-fit: cover;
+}
