@@ -5,6 +5,17 @@
 - [DeepWiki](https://deepwiki.com/): AI 驅動的知識庫，協助使用者建立、組織和共享知識
 - [v0](https://v0.dev/): Vercel 推出的生成式 UI 系統，能根據文字或圖片描述產生 React + Tailwind CSS 程式碼
 
+## database
+
+- [Postgres](https://www.postgresql.org/): 一款功能強大的開源物件關聯式資料庫系統
+- [Oriole](https://www.orioledb.com/): 一個為 PostgreSQL 設計的新儲存引擎，旨在提供更高水準的效能和可靠性
+- [LevelDB](https://github.com/google/leveldb/): Google 開發的快速 Key/Value 儲存函式庫，提供從字串鍵到字串值的有序對應
+- [TiDB](https://github.com/pingcap/tidb): 一款開源的分散式 NewSQL 資料庫，支援混合交易和分析處理 (HTAP) 工作負載，並與 MySQL 相容
+
+## react component
+
+- [React Flow](https://reactflow.dev/): 一個用於建立基於節點的 UI、編輯器和圖表的函式庫
+
 ## animation
 
 - [gsap](https://greensock.com/gsap/): 強大的 JavaScript 動畫庫，提供豐富的動畫效果與時間軸控制
