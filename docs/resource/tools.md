@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Tools
 
+## Web App
+
+- [SnapDrop](https://www.snap-drop.net/): 是一個無需安裝或註冊的網頁工具，可在跨平台的設備之間，透過瀏覽器進行檔案的點對點傳輸
+
 ## Mac App (by App Store)
 
 - [Maccy](https://maccy.app/): 一款輕量級、開源的剪貼簿管理工具，支援快速搜尋、預覽與貼上歷史剪貼內容
