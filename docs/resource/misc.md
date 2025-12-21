@@ -4,6 +4,7 @@
 
 - [DeepWiki](https://deepwiki.com/): AI 驅動的知識庫，協助使用者建立、組織和共享知識
 - [v0](https://v0.dev/): Vercel 推出的生成式 UI 系統，能根據文字或圖片描述產生 React + Tailwind CSS 程式碼
+- [SVG animate](https://www.svganimate.ai/en/home): 基於 Gemini3.0 的 svg 動畫產生器
 
 ## database
 
