@@ -24,6 +24,7 @@
 ## docs tool
 
 - [docusaurus](https://github.com/facebook/docusaurus): Facebook 開源的靜態網站產生器，專為快速建立文件網站
+- [excalidraw](https://excalidraw.com/): Excalidraw 是一款極簡風格、具備手繪質感的線上協作白板工具。
 
 ## benchmark
 
