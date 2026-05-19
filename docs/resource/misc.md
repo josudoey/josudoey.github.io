@@ -27,6 +27,7 @@
 
 - [docusaurus](https://github.com/facebook/docusaurus): Facebook 開源的靜態網站產生器，專為快速建立文件網站
 - [excalidraw](https://excalidraw.com/): Excalidraw 是一款極簡風格、具備手繪質感的線上協作白板工具。
+- [StackEdit](https://stackedit.io/): 基於瀏覽器的 Markdown 編輯器，支援即時預覽與雲端同步
 
 ## benchmark
 
