@@ -14,6 +14,7 @@
 - [libSQL Studio](https://libsqlstudio.com): 基於 Web 的 libSQL 與 SQLite 資料庫管理工具
 - [LevelDB](https://github.com/google/leveldb/): Google 開發的快速 Key/Value 儲存函式庫，提供從字串鍵到字串值的有序對應
 - [TiDB](https://github.com/pingcap/tidb): 一款開源的分散式 NewSQL 資料庫，支援混合交易和分析處理 (HTAP) 工作負載，並與 MySQL 相容
+- [Upstash](https://upstash.com/): 提供 Serverless Redis、Kafka 和 Vector 資料庫的資料平台，專為無伺服器架構設計
 
 ## react component
 
