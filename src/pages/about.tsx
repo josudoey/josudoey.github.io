@@ -29,7 +29,7 @@ function AboutHeader () :ReactNode {
 
 export default function About (): ReactNode {
   return (
-  <Layout>
+  <Layout title="關於我" description="關於 Joey Fang - Senior Backend Engineer。期許自己每天都能多進步一點點，讓世界可以變得更美好。">
       <AboutHeader />
       <main>
         <section className={styles.themeSection}>

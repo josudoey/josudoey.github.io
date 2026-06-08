@@ -8,6 +8,33 @@ const config: Config = {
   tagline: '',
   favicon: 'img/favicon.ico',
 
+  plugins: [
+    () => ({
+      name: 'gtm-plugin',
+      injectHtmlTags() {
+        return {
+          headTags: [
+            {
+              tagName: 'script',
+              innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MBGWG2SH');`
+            }
+          ],
+          preBodyTags: [
+            {
+              tagName: 'noscript',
+              innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBGWG2SH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>`
+            }
+          ]
+        }
+      }
+    })
+  ],
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true // Improve compatibility with the upcoming Docusaurus v4
@@ -31,8 +58,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en']
+    defaultLocale: 'zh-Hant',
+    locales: ['zh-Hant']
   },
 
   presets: [
@@ -63,9 +90,6 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css'
-        },
-        gtag: {
-          trackingID: 'GTM-MBGWG2SH'
         }
       } satisfies Preset.Options
     ]
@@ -77,7 +101,8 @@ const config: Config = {
     metadata: [
       { name: 'algolia-site-verification', content: 'F2C9D91D4568864A' },
       { name: 'google-site-verification', content: 'SR8PdSgjtRYWo8gTxn1Lc0eFsSVqZigByOx_-HDWWI0' },
-      { name: 'keywords', content: 'blog' }
+      { name: 'description', content: 'Joey\'s NetHub - Joey Fang 的個人網站與技術筆記。分享後端開發（Golang、TypeScript）、雲端架構（Docker、Kubernetes）、資料庫優化（PostgreSQL、MongoDB、Redis）、分散式系統與個人專案經驗。' },
+      { name: 'keywords', content: 'Joey Fang, Joey\'s NetHub, 後端工程師, Backend Engineer, Golang, TypeScript, Docker, Kubernetes, PostgreSQL, Dcard Ads, 技術筆記' }
     ],
     algolia: { // ref https://docusaurus.io/docs/search#connecting-algolia
       apiKey: '5fac56a2cf4660e6fa6ed09eda736810',
